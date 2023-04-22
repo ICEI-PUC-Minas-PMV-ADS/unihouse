@@ -1,9 +1,9 @@
 
 # Projeto de Interface
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
+Visão geral da interação que é permitida ao usuário realizar pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema da UniHouse.
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+ Nossa plataforma foi projetada para o usuário conseguir de forma intuitiva, encontrar o seu alojamento ideal para morar durante o tempo que permanecer na universidade, como forma de precaução na divulgação de informações mais pessoais, como por exemplo as redes sociais do locador e nome de pessoas que podem ja estar habitando o alojamento, o usuário só terá acesso a essas informações mais especificas e completas do alojamento escolhido somente se realizar o login ou cadastro no site. A plataforma terá na homepage, os principais estados que contenham as faculdades mais populares do Brasil e um espaço de busca mais rápido, prático e específico para filtrar o lugar desejado, economizando os cliques em estado e cidade desejados
 
 ## User Flow
 
