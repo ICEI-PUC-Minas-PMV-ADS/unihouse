@@ -7,7 +7,8 @@ Visão geral da interação que é permitida ao usuário realizar pelas telas do
 
 ## User Flow
 
-![UserFlow](https://user-images.githubusercontent.com/85804740/233755070-e2a4c684-0e2f-45e6-be3d-6ad5393050a0.png)
+![untitled@2x](https://user-images.githubusercontent.com/85804740/233804329-f295a4c0-1126-426c-834a-f1af4258c5ab.png)
+
 
 > ## Legenda para o user flow acima
 > - Losango: Decisões que variam de usuário para usuário
