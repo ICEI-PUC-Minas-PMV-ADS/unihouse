@@ -45,6 +45,8 @@ São protótipos usados em design de interface para sugerir a estrutura de um si
 
 ## Tela de adicionar alojamento
 ----------------------------------------------------------------------------------------------------------------------------
-![Desktop - 15](https://user-images.githubusercontent.com/85804740/233805554-f1a7fdfb-c1dd-4454-978b-93c55ca4ddf5.png)
+![Desktop - 2](https://user-images.githubusercontent.com/85804740/233805556-26047dfd-df7c-42c0-9329-52d884861e70.png)
 
-
+## Tela de lista de alojamentos
+----------------------------------------------------------------------------------------------------------------------------
+![Desktop - 15](https://user-images.githubusercontent.com/85804740/233806514-86c5252c-68e6-4293-8ffc-760277a62b39.png)
