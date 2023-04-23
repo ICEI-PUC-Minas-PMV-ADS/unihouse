@@ -8,6 +8,8 @@ A arquitetura da solução é composta pelos seguintes componentes: banco de dad
 
 ---
 
+![Diagrama de componentes](https://user-images.githubusercontent.com/54692628/233869481-fb4cbbfb-824f-4adc-af2e-22d7ff3bf189.png)
+
 Diagrama que permite a modelagem física de um sistema, através da visão dos seus componentes e relacionamentos entre os mesmos.
 
 A solução implementada conta com os seguintes módulos:
@@ -16,6 +18,8 @@ A solução implementada conta com os seguintes módulos:
     - **Páginas Web** - Conjunto de arquivos HTML, CSS, JavaScript e imagens que implementam as funcionalidades do sistema.
 - **Banco de Dados -** responsável pelo armazenamento e gerenciamento dos dados utilizados pela aplicação.
 - **Hospedagem -** local na Internet onde as páginas são mantidas e acessadas pelo navegador.
+- 
+![userFlow](https://user-images.githubusercontent.com/85804740/233804329-f295a4c0-1126-426c-834a-f1af4258c5ab.png)
 
 ## Tecnologias Utilizadas
 
