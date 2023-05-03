@@ -1,86 +1,28 @@
-/* Reset CSS 
-Um reset CSS é um conjunto de regras CSS que redefine os valores padrão de estilo para elementos HTML, garantindo que a aparência do site seja consistente em diferentes plataformas.*/
+/* Reset CSS */
+
+/* Define a margem e o preenchimento para 0 para garantir que o elemento não tenha nenhum espaço extra */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  html {
-    font-size: 62.5%;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    font-size: 1.6rem;
-    line-height: 1.5;
-    color: #333;
-    background-color: #fff;
-  }
-  
-  /* Remove default list styles */
-  ul, ol {
-    list-style: none;
-  }
-  
-  /* Remove default anchor styles */
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  /* Remove default form styles */
-  button, input, select, textarea {
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-  }
-  
-  /* Remove default button styles */
-  button {
-    cursor: pointer;
-  }
-  
-  /* Remove default table styles */
-  table {
-    border-collapse: collapse;
-    border-spacing: 0;
-  }
-  
-  /* Remove default image styles */
-  img {
-    max-width: 100%;
-    height: auto;
-    border: none;
-  }
-  
-  /* Remove default media player styles */
-  audio, video {
-    display: inline-block;
-  }
-  
-  /* Remove default quote styles */
-  blockquote, q {
-    quotes: none;
-  }
-  
-  /* Remove default formatting on some elements */
-  sub, sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-  }
-  
-  sup {
-    top: -0.5em;
-  }
-  
-  sub {
-    bottom: -0.25em;
-  }
-  
+  margin: 0;
+  padding: 0;
+}
+
+/* Definir o box-sizing como border-box para garantir que a largura e altura incluam a borda e o preenchimento */
+* {
+  box-sizing: border-box;
+}
+
+/* Definir uma fonte padrão para garantir a consistência */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Remover decoração de link */
+a {
+  text-decoration: none;
+}
+
+/* Definir uma cor padrão para o texto */
+body {
+  color: #333;
+}

@@ -1,0 +1,22 @@
+.main {
+    background-color: blue;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 70px);
+}
+
+section {
+    height: 100vh;
+}
+
+.sectionSobre {
+    background-color: green;
+    width: 100%;
+}
+
+.sectionMotivo {
+    background-color: yellow;
+}
