@@ -1,5 +1,15 @@
 :root {
-    
+    --colorNav: #5A5A5A;
+    --colorBg: #222121; 
+    --colorText: #C6C6C6;
+}
+
+html, body {
+    background-color: var(--colorBg);
+}
+
+h1,h2,h3,p {
+    color: var(--colorText);
 }
 
 .nav {
@@ -7,5 +17,7 @@
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    background-color: red;
+    background-color: var(--colorNav);
+    padding-left: 20px;
+    padding-right: 20px;
 }
