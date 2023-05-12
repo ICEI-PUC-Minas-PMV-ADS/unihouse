@@ -1,16 +1,4 @@
-.sectionSobre {
-    background-color: green;
-}
-
-.sectionMotivo {
-    background-color: yellow;
-}
-
-footer {
-    background-color: purple;
-}
-
-.main {
+main {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -55,16 +43,17 @@ footer {
     padding: 10px 0px 10px 0px;
     cursor: pointer;
     border-radius: 0px 5px 5px 0px;
-    border: none;
+    background-color: white;
+    outline: none;
+    width: 50px;
 }
 
-.main__pesquisa__btn__img {
-    width: 50%;
-    height: auto;
+.main__pesquisa__btn .fa-magnifying-glass {
+    color: var(--colorText);
 }
 
 section {
-    height: 100vh;
+    min-height: 50vh;
 }
 
 .sectionSobre {
@@ -75,7 +64,6 @@ section {
 
 .sectionSobre__textContainer {
     width: 55%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,8 +72,25 @@ section {
     gap: 20px;
 }
 
+.sectionSobre__textContainer__text {
+    line-height: 30px;
+    padding: 20px;
+}
+
 .sectionSobre__imgContainer {
     width: 45%;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionSobre__imgContainer__img {
+    background-color: var(--colorNav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 100%;
 }
 
@@ -93,10 +98,69 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .sectionMotivo__containerCard {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.sectionMotivo__containerCard__card {
+    background-color: var(--colorNav);
+    width: 350px;
+    height: 450px;
+}
+
+.sectionMotivo__cardBody, .sectionMotivo__cardHeader {
+    width: 100%;
+    height: 50%;
+}
+
+.sectionMotivo__cardHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionMotivo__cardBody {
+    padding: 15px;
+}
+
+.sectionMotivo__cardHeader .fa-regular, .sectionMotivo__cardHeader .fa-solid {
+    font-size: 100px;
+    color: var(--colorSeg);
+}
+
+.footer {
+    padding: 40px 0;
+    margin-top: 40px;
+    background-color: var(--colorNav);
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    color: var(--colorText);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .sectionMotivo__cardBody  {
+        font-size: 10pt;
+    }
 }
 
 /*Tablet*/
@@ -112,11 +176,23 @@ section {
     .sectionSobre__textContainer,.sectionSobre__imgContainer {
         width: 100%;
     }
+
+    .sectionMotivo__containerCard {
+        flex-direction: column;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
 }
 
 /*Celular*/
 @media (max-width: 600px) {
     .main__title {
         font-size: 50px;
+    }
+
+    .footer {
+        font-size: 10pt;
     }
 }

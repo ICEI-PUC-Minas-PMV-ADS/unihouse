@@ -7,6 +7,7 @@
     --colorText: #C6C6C6;
     --colorSeg: #4B0FBF;
 
+
     /*Fontes*/
     --fontTitulo: 'Cinzel', serif;
     --fontSec: 'Inter', sans-serif;
@@ -47,8 +48,8 @@ h1,h2,h3,p {
     align-items: center;
 }
 
-.nav__btn__user {
-    
+.nav__btn .fa-user {
+    color: #fff;
 }
 
 /*Celular*/
