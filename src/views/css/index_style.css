@@ -196,3 +196,11 @@ section {
         font-size: 10pt;
     }
 }
+
+/*Scroll Reveal*/
+.main__subTitile,
+.sectionSobre__textContainer__text,
+.sectionSobre__imgContainer__img,
+.cardBody__text {
+    visibility: hidden;
+}
