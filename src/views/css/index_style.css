@@ -1,16 +1,4 @@
-.sectionSobre {
-    background-color: green;
-}
-
-.sectionMotivo {
-    background-color: yellow;
-}
-
-footer {
-    background-color: purple;
-}
-
-.main {
+main {
     display: flex;
     width: 100%;
     flex-direction: column;
@@ -19,7 +7,12 @@ footer {
     min-height: calc(100vh - 70px);
     text-align: center;
     background-color: var(--colorBg);
-    gap: 25px;
+    gap: 40px;
+    overflow: hidden;
+}
+
+section {
+    min-height: 50vh;
 }
 
 .main__title {
@@ -55,17 +48,62 @@ footer {
     padding: 10px 0px 10px 0px;
     cursor: pointer;
     border-radius: 0px 5px 5px 0px;
-    border: none;
+    background-color: white;
+    outline: none;
+    width: 50px;
 }
 
-.main__pesquisa__btn__img {
-    width: 50%;
-    height: auto;
+.main__pesquisa__btn .fa-magnifying-glass {
+    color: var(--colorText);
 }
 
-section {
-    height: 100vh;
-}
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 150px;
+  }
+  
+  .card {
+    width: calc(20% - 20px);
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  
+  .card-title {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  .card-title h2 {
+    margin: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      width: calc(40% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      width: 60%;
+    }
+  }
+  
 
 .sectionSobre {
     width: 100%;
@@ -75,7 +113,6 @@ section {
 
 .sectionSobre__textContainer {
     width: 55%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -84,19 +121,94 @@ section {
     gap: 20px;
 }
 
+.sectionSobre__textContainer__text {
+    line-height: 30px;
+    padding: 20px;
+}
+
 .sectionSobre__imgContainer {
     width: 45%;
-    height: 100%;
+    padding: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionSobre__imgContainer__img {
+    width: auto;
+    height: 50%;
 }
 
 .sectionMotivo {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
 }
 
 .sectionMotivo__containerCard {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.sectionMotivo__containerCard__card {
+    background-color: var(--colorNav);
+    width: 350px;
+    height: 450px;
+}
+
+.sectionMotivo__cardBody,
+.sectionMotivo__cardHeader {
+    width: 100%;
+}
+
+.sectionMotivo__cardHeader {
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionMotivo__cardBody {
+    height: 60%;
+    padding: 15px;
+    line-height: 20px;
+}
+
+.sectionMotivo__cardHeader .fa-regular, .sectionMotivo__cardHeader .fa-solid {
+    font-size: 80px;
+    color: var(--colorSeg);
+}
+
+.footer {
+    padding: 40px 0;
+    margin-top: 40px;
+    background-color: var(--colorNav);
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    color: var(--colorText);
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (max-width: 800px) {
+    .sectionMotivo__cardBody  {
+        font-size: 10pt;
+    }
 }
 
 /*Tablet*/
@@ -112,6 +224,18 @@ section {
     .sectionSobre__textContainer,.sectionSobre__imgContainer {
         width: 100%;
     }
+    .sectionSobre__imgContainer__img {
+        width: 60%;
+        height: auto;
+    }
+
+    .sectionMotivo__containerCard {
+        flex-direction: column;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
 }
 
 /*Celular*/
@@ -119,4 +243,16 @@ section {
     .main__title {
         font-size: 50px;
     }
+
+    .footer {
+        font-size: 10pt;
+    }
+}
+
+/*Scroll Reveal*/
+.main__subTitile,
+.sectionSobre__textContainer__text,
+.sectionSobre__imgContainer__img,
+.cardBody__text {
+    visibility: hidden;
 }
