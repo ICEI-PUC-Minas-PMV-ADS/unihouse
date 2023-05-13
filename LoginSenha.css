@@ -64,6 +64,7 @@ body * {
     padding: 20px 25px;
     background: #5A5A5A;
     border-radius: 10px;
+    gap: 1rem;
 }  
 
 .card-login > h1{
@@ -81,10 +82,17 @@ body * {
     margin: 10px 0px;
 }
 
+    .icon {
+        
+        background: url("User_alt_fill.svg") no-repeat scroll 0 0 ;
+}
+    
+
 .textfield > input{
     width: 100%;
+    height: 2rem;
     border: none;
-    border-radius: 0px;
+    border-radius: 2px;
     padding: 5x;
     background: #E1E1E1;
     color: #0085FF;
@@ -117,6 +125,19 @@ body * {
     cursor: pointer;
 }
 
+.text__form {
+    border: 1px solid ;
+    height: 53px;
+    width: 358px;
+    display: flex;
+    gap: ;
+}
+
+
+.user {
+    height: 100%;
+    width: 100%;
+}
 @media only screen and (max-widht: 950px){
     .card-login{
         width: 85%;
