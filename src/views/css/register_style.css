@@ -1,0 +1,82 @@
+main {
+    background-color:var(--colorBg);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.ContainerImagem {
+    background-color: var(--colorBg);
+    height: 500px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+form{
+    background-color:var(--colorNav);
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+}
+.ContainerCadastro {
+       width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.ContainerVoltar {
+padding: 10px;
+}
+
+.ContainerVoltar a {
+    color: rgb(153, 199, 236);
+    ;
+}
+
+.ContainerInput {
+    background-color: #fff;
+    width: 70%;
+    height: 30px;
+    border-radius: 10px;
+   }
+
+.ContainerInput input {
+width: 90%;
+height: 100%;
+border-radius: 10px;
+}
+
+.ContainerInput i {
+width: 10%; 
+text-align: center;
+height: 100%;
+border-radius: 10px;
+}
+
+img {
+    width: 70%;
+    height: auto;
+    
+}
+
+button{
+    background-color: var(--colorSeg);
+    color: #fff;
+    width: 60%;
+    height: 10%;
+}
+
+.ContainerCadastro p a {
+    color: rgb(153, 199, 236);
+}
