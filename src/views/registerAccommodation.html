@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Casa</title>
+    <meta name="author" content="Luan">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <!--Icones-->
+    <script src="https://kit.fontawesome.com/ab52fd1164.js" crossorigin="anonymous"></script>
+    <!--CSS gerais-->
+    <link rel="stylesheet" href="./src/views/css/reset.css">
+    <link rel="stylesheet" href="/src/views/css/style.css">
+    <link rel="stylesheet" href="./css/registerAccommodation_style.css">
+</head>
+<body>
+    <div class="content">
+        <h1>Cadastrar Casa</h1>
+        <form id="form">
+            <div>
+                <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+            </div>
+            <div>
+                <input type="email" placeholder="Digite seu email" class="inputs required" oninput="emailValidate()">
+                <span class="span-required">Digite um email válido</span>
+            </div>
+            <div>
+                <input type="number" placeholder="Idade" class="inputs required" oninput="Number()">
+                <span class="span-required">Deve ser maior que 18 anos</span>
+            </div>
+            <div>
+                <input type="Text" placeholder="CEP" class="inputs required" oninput="Number()">
+                <span class="span-required">Insira o CEP</span>
+            </div>
+            <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10" placeholder="Fale um pouco sobre a casa e o valor do aluguel..."></textarea>
+            <p>Valor Médio:</p>
+            <div class="box-select">
+                <div>
+                    <input type="radio" id="m" value="m" name="valor">
+                    <label for="m">200-500</label>
+                </div>
+                <div>
+                    <input type="radio" id="f" value="f" name="valor">
+                    <label for="f">500-1000</label>
+                </div>
+                <div>
+                    <input type="radio" id="o" value="o" name="valor">
+                    <label for="o">Acima</label>
+                </div>
+            </div>
+            <p>Insira Imagens abaixo:</p>
+            <input type="file" id="myFile" />
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+    <!--Script geral-->
+    <script src="./src/views/js/script.js"></script>
+    <script src="./js/registerAccommodation_script.js"></script>
+</body>
+</html>

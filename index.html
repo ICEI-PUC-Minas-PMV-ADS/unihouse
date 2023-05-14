@@ -5,15 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>UniHouse</title>
-    <meta name="description" content="">
+    <meta name="author" content="Kayki Letieri">
+    <meta name="description" content="Unihouse é a plataforma online que conecta estudantes universitários a opções de moradia, como apartamentos, casas e repúblicas. Os proprietários de imóveis podem anunciar suas propriedades diretamente aos estudantes.">
     <meta name="keywords" content="HTML, CSS, JavaScript">
-    <!--Icones-->
+
+    <link rel="shortcut icon" href="/src/assets/img/favicon.ico" type="image/x-icon">
+
+    <!--Bibliotecas-->
     <script src="https://kit.fontawesome.com/ab52fd1164.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     <!--CSS gerais-->
-    <link rel="stylesheet" href="./src/views/css/reset.css">
-    <link rel="stylesheet" href="/src/views/css/style.css">
+    <link rel="stylesheet" href="src/views/css/reset.css">
+    <link rel="stylesheet" href="src/views/css/style.css">
+
     <!--Css específico-->
-    <link rel="stylesheet" href="./src/views/css/index_style.css">
+    <link rel="stylesheet" href="src/views/css/index_style.css">
 </head>
 <body>
     <nav class="nav">
@@ -21,7 +28,7 @@
             <img class="nav__logo" src="./src/assets/img/logo.png" alt="logo">
         </a>
 
-        <a href="#" class="nav__btn">
+        <a href="./src/views/login.html" class="nav__btn">
             <i class="fa-solid fa-user"></i>
         </a>
     </nav>
@@ -37,41 +44,79 @@
             </button>
         </div>
 
-        <div>
-            <div class="card-uf">
-                Minas Gerais
-            </div>
-
-            <div class="card-uf">
-                São Paulo
-            </div>
-
-            <div class="card-uf">
-                Rio de Janeiro
-            </div>
+        <div class="card-container">
+            <a href="#" class="card">
+              <img src="https://media.istockphoto.com/id/1166728645/pt/foto/suspension-bridge-cable-stayed-bridge-in-the-world.jpg?s=612x612&w=0&k=20&c=_2bO5TdCKNzrSHgaofCvqpQRiwRtNtFOLdeI8WpsMBc=" alt="São Paulo">
+              <div class="card-title">
+                <h2>São Paulo</h2>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="https://cdn2.revistahoteis.com.br/wp-content/uploads/2019/06/Belo-Horizonte.jpg" alt="Minas Gerais">
+              <div class="card-title">
+                <h2>Minas Gerais</h2>
+              </div>
+            </a>
+            <a href="#" class="card">
+              <img src="https://www.caurj.gov.br/wp-content/uploads/2015/10/rio-de-janeiro.jpg" alt="Rio de Janeiro">
+              <div class="card-title">
+                <h2>Rio de Janeiro</h2>
+              </div>
+            </a>
         </div>
+          
     </main>
 
     <section class="sectionSobre">
         <div class="sectionSobre__textContainer">
             <h2>SOBRE NÓS</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. In labore natus, non laudantium tenetur veniam earum provident facere nihil maiores quaerat eos. Amet, minima. Sunt magni cumque eos reiciendis qui.</p>
+            <p class="sectionSobre__textContainer__text">Unihouse é a plataforma online que conecta estudantes universitários a opções de moradia, como apartamentos, casas e repúblicas. Os proprietários de imóveis podem anunciar suas propriedades diretamente aos estudantes.<br>
+                Com uma interface intuitiva e amigável, a plataforma Unihouse oferece uma solução prática e conveniente para estudantes universitários encontrarem a moradia ideal durante sua jornada acadêmica. Nossa plataforma conecta diretamente os estudantes aos proprietários de imóveis, eliminando intermediários e simplificando o processo de busca e reserva.</p>
         </div>
         <div class="sectionSobre__imgContainer">
-            img
+            <img  class="sectionSobre__imgContainer__img" src="./src/assets/img/logo.png" alt="logo da UniHouse">
         </div>
     </section>
 
     <section class="sectionMotivo">
         <h2>POR QUE ESCOLHER</h2>
         <div class="sectionMotivo__containerCard">
-            ...
+            <div class="sectionMotivo__containerCard__card">
+                <div class="sectionMotivo__cardHeader">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="sectionMotivo__cardBody"><p class="cardBody__text">Nossa plataforma proporciona uma experiência ágil e eficiente na busca por acomodações estudantis. Com recursos intuitivos e uma interface amigável, os estudantes universitários podem encontrar e explorar uma ampla gama de opções disponíveis em tempo real. Através de filtros de pesquisa personalizáveis, eles podem refinar sua busca de acordo com suas preferências e necessidades específicas.</p></div>
+            </div>
+
+            <div class="sectionMotivo__containerCard__card">
+                <div class="sectionMotivo__cardHeader">
+                    <i class="fa-regular fa-credit-card"></i>
+                </div>
+                <div class="sectionMotivo__cardBody"><p class="cardBody__text">Em nosso site, a transação de pagamento é realizada de forma direta e independente entre os estudantes universitários e os anunciantes de acomodações. A plataforma oferece uma experiência de busca e divulgação de vagas, conectando estudantes a anunciantes qualificados. Os detalhes sobre os métodos de pagamento e acordos financeiros são negociados individualmente entre as partes envolvidas, garantindo flexibilidade e autonomia no processo.</p></div>
+            </div>
+
+            <div class="sectionMotivo__containerCard__card">
+                <div class="sectionMotivo__cardHeader">
+                    <i class="fa-solid fa-chart-simple"></i>
+                </div>
+                <div class="sectionMotivo__cardBody"><p class="cardBody__text">Nossa plataforma é totalmente funcional e comprovada para atender às necessidades dos estudantes universitários em busca de acomodações. Desenvolvemos e testamos cuidadosamente todos os recursos e funcionalidades para garantir uma experiência perfeita. Realizamos extensas etapas de teste, desde a busca de vagas até a interação com os anunciantes, para assegurar que tudo funcione corretamente.</p></div>
+            </div>
         </div>
     </section>
 
-    <footer>feito com amor pelo principe da revoada</footer>
+    <footer class="footer">
+        <div class="footer__container">
+              <p class="footer__text">&copy; 2023 UniHouse - Todos os direitos reservados</p>
+              <ul class="footer__list footer__list--right">
+                <li class="footer__item"><a href="#" class="footer__link">Política de privacidade</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Termos de uso</a></li>
+              </ul>
+        </div>
+      </footer>
 
     <!--Script geral-->
     <script src="./src/views/js/script.js"></script>
+    <!--Script Especifico-->
+    <script src="./src/views/js/index_script.js"></script>
 </body>
 </html>

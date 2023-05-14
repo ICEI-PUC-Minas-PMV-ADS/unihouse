@@ -1,1 +1,4 @@
-//alert("ESTAMOS EM DESENVOLVIMENTO")
+function redirecionarParaRegistroAlojamento() {
+    window.location.href = "registerAccommodation.html";
+  }
+
