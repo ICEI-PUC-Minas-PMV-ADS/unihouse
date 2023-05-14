@@ -1,15 +1,25 @@
 # Programação de Funcionalidades
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
+Esta parte esta reservada para apresentarmos desenvolvidas para cada uma das funcionalidades do sistema. O respectivo endereço e outras orientações de acesso são apresentadas na sequência.
 
-Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
+Tela cadastrar casa - 
+![telacadastrarcasa](https://github.com/ICEI-PUC-Minas-PMV-ADS/unihouse/assets/85804740/331942f3-6a66-4387-bc42-db9dbc0f6a9c)
 
-Para cada requisito funcional, pode ser entregue um artefato desse tipo
+Tela de recuperar senha -
+![telarecuperarsenha](https://github.com/ICEI-PUC-Minas-PMV-ADS/unihouse/assets/85804740/3cf49aba-e90d-4943-97ea-781cf0c5294e)
 
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+## Login
+
+![telaslogin](https://github.com/ICEI-PUC-Minas-PMV-ADS/unihouse/assets/85804740/71923d51-6c8a-4ad6-b6c6-9150c227a95f)
+
+Tela de cadastro -
+![telascadastro](https://github.com/ICEI-PUC-Minas-PMV-ADS/unihouse/assets/85804740/2f5e0d22-06ba-4975-ac4e-7a1707df6e94)
+
+Tela sobre nós - 
+![sobrenos](https://github.com/ICEI-PUC-Minas-PMV-ADS/unihouse/assets/85804740/484094fa-5e76-4bcb-b441-b2abe1d6c2f6)
+
+Tela porque nos escolher -
+![porquenosescolher](https://github.com/ICEI-PUC-Minas-PMV-ADS/unihouse/assets/85804740/424ff5cc-b2cf-4d02-85b8-dd46427502df)
+
+Homepage - 
+![homepage](https://github.com/ICEI-PUC-Minas-PMV-ADS/unihouse/assets/85804740/ab602ae9-33c7-451d-87c5-e206e8d61f59)
