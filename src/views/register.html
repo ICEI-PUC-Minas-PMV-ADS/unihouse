@@ -16,7 +16,7 @@
     <main>
         <form>
             <div class="ContainerVoltar">
-            <a href="#"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+            <a href="login.html"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
             </div>
            
              <div class="ContainerCadastro">
@@ -39,7 +39,7 @@
                 </div>
             
                 <P>Ao se registrar, você aceita nossos <a href="#">termos de uso</a>  </P>
-                <button>Cadastrar</button>
+                <button onclick="redirecionarParaLogin()">Cadastrar</button>
              </div>
 
         </form>
@@ -49,7 +49,10 @@
         </div>
         </main>
     
-    <script src="./js/script.js"></script>
-    <script src="./js/register_script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/register_script.js"></script>
+    <script>function redirecionarParaLogin() {
+        window.location.href = "login.html"
+    }</script>
 </body>
 </html>
