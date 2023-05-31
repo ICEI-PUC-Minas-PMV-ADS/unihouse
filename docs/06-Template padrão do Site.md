@@ -1,12 +1,12 @@
 # Template padrão do site
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>
+Layout padrão do site (HTML e CSS) que será utilizado na maioria das páginas com a definição de identidade visual, aspectos de responsividade e iconografia. As telas que temos até o momento e que irão seguir padrão da imagem abaixo são:
+* Tela Homepage
+* Tela de cadastro de alojamento
 
-Layout padrão do site (HTML e CSS) que será utilizado em todas as páginas com a definição de identidade visual, aspectos de responsividade e iconografia.
+![LayoutPags](https://github.com/ICEI-PUC-Minas-PMV-ADS/unihouse/assets/85804740/f12c69ac-48b1-4e2f-8b9d-d6b075bf25c5)
 
-> **Links Úteis**:
->
-> - [CSS Website Layout (W3Schools)](https://www.w3schools.com/css/css_website_layout.asp)
-> - [Website Page Layouts](http://www.cellbiol.com/bioinformatics_web_development/chapter-3-your-first-web-page-learning-html-and-css/website-page-layouts/)
-> - [Perfect Liquid Layout](https://matthewjamestaylor.com/perfect-liquid-layouts)
-> - [How and Why Icons Improve Your Web Design](https://usabilla.com/blog/how-and-why-icons-improve-you-web-design/)
+Existem páginas que não irão ter esse layout, e cada uma terá um identidade visual diferente das demais, sendo elas: 
+* Tela de login
+* Tela de cadastro
+* Tela de recuperar senha
