@@ -166,3 +166,7 @@ body * {
         width: 90;
     }
 }
+
+#passwordInput {
+    width: 100%;
+}
