@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Login bem-sucedido!");
   
        
-        window.location.href = "../../index.html";
+        window.location.href = "./exibicao/exibicao.html";
       } else {
         alert("Usuário ou senha inválidos. Por favor, tente novamente.");
       }
