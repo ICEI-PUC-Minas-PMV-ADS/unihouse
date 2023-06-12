@@ -1,4 +1,4 @@
-const form   = document.getElementById('form');
+const form   = document.getElementById('informacoes--primarias');
     const campos = document.querySelectorAll('.required');
     const spans  = document.querySelectorAll('.span-required');
     const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
@@ -42,51 +42,67 @@ const form   = document.getElementById('form');
     }
 
 document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("form").addEventListener("submit", function(event) {
+    document.getElementById("informacoes--primarias").addEventListener("submit", function(event) {
         event.preventDefault();
     
-        var name = document.getElementById("NomeInput").value;
-        var email = document.getElementById("EmailInput").value;
-        var idade = document.getElementById("IdadeInput").value;
-        var cep = document.getElementById("CepInput").value;
-        var valor = document.getElementById("ValorMenInput").value;
+        var nomeALJ = document.getElementById("iptNameALJ").value;
+        var ruaALJ = document.getElementById("iptRuaALJ").value;
+        var cidadeALJ = document.getElementById("iptCidade").value;
+        var bairoALJ = document.getElementById("iptBairro").value;
+        var estadoALJ = document.getElementById("iptEstado").value;
+        var complementoALJ = document.getElementById("iptComplemento").value;
+        var cepALJ = document.getElementById("iptCep").value;
+        var escALJ = document.getElementsByName("iptEscCasa");
+        var nomeLOC = document.getElementById("iptNameloc").value;
+        var cpfLOC = document.getElementById("iptCpf").value;
+        var emailLOC = document.getElementById("iptEmail").value;
+        var numTelLOC = document.getElementById("iptNumTel").value;
+        var instaLOC = document.getElementById("iptInstaPerfil").value;
+        var faceLOC = document.getElementById("iptFacePerfil").value;
+        
+        var decisaoALJ;
 
-        if (!name || !email || !idade || !valor || !cep) {
-        alert("Por favor, preencha todos os campos corretamente.");
-        return false;
+        function escolhaTipoALJ(){
+            for (var i = 0; i < escALJ.length; i++) {
+                if (escALJ[i].checked) {
+                    decisaoALJ = escALJ[i].value;
+                break;
+                }
+            } 
         }
 
-        if (idade < 18) {
-        alert("A idade do proprietário tem que ser mais que 18 anos");
-        return false;
+        if (!nomeALJ || !ruaALJ || !cidadeALJ || !bairoALJ || !estadoALJ || !complementoALJ || !cepALJ || !escALJ || !nomeLOC
+            || !cpfLOC || !emailLOC || !numTelLOC || !instaLOC || !faceLOC) {
+            alert("Por favor, preencha todos os campos corretamente.");
+            return false;
         }
 
         var house = {
-            name: name,
-            email: email,
-            idade: idade,
-            cep: cep,
-            valor: valor
+            nomeAlojamento: nomeALJ,
+            ruaAlojamento: ruaALJ,
+            cidadeAlojamento: cidadeALJ,
+            bairoAlojamento: bairoALJ,
+            estadoAlojamento: estadoALJ,
+            complementoAlojamento: complementoALJ,
+            cepAlojamento: cepALJ,
+            decisaoAlojamento: decisaoALJ,
+            nomeLocador: nomeLOC,
+            cpfLocador: cpfLOC,
+            emailLocador: emailLOC,
+            numTelLocador: numTelLOC,
+            instaLocador: instaLOC,
+            faceLocador: faceLOC
         };
 
         var storedHouses = localStorage.getItem("registeredHouses");
         var houses = storedHouses ? JSON.parse(storedHouses) : [];
 
-        // var existingHouse = users.find(function(u) {
-        // return u.username === user.username;
-        // });
-
-        // if (existingUser) {
-        // alert("Usuário já cadastrado. Por favor, escolha um nome de usuário diferente.");
-        // return false;
-        // }
-
         houses.push(house);
 
         localStorage.setItem("registeredHouses", JSON.stringify(houses));
 
-        //window.location.href = "login.html";
-
+        alert("Casa registrada corretamente.");
+        
         return false;
     });
 });
