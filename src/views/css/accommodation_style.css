@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Inter&family=Roboto&display=swap');
+
+:root {
+    /*Cores*/
+    --colorNav: #5A5A5A;
+    --colorBg: #222121; 
+    --colorText: #C6C6C6;
+    --colorSeg: #4B0FBF;
+
+
+    /*Fontes*/
+    --fontTitulo: 'Cinzel', serif;
+    --fontSec: 'Inter', sans-serif;
+    --fontTer: 'Roboto', sans-serif;
+}
+
+html, body {
+    background-color: var(--colorBg);
+}
+
+h1,h2,h3,p {
+    color: var(--colorText);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: var(--colorNav);
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav__logo {
+    width: 25%;
+    height: auto;
+}
+
+.nav__btn {
+    background: var(--colorSeg);
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    width: 46px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__btn .fa-user {
+    color: #fff;
+}
+
+/*Celular*/
+@media (max-width: 600px) {
+    .nav__logo {
+        width: 45%;
+    }
+}
+
+/*Até aqui é padrão*/
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.image {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.description {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.localização{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .info-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 10px;
+    text-align: left;
+  }
+  
+  .info-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .info-box li {
+    color: #666;
+    font-size: 14px;
+    padding: 5px 0;
+  }
+  
+  .info-box h2 {
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .btn-entrar-contato {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #b81ad8;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-entrar-contato:hover {
+    background-color: #a311c7;
+  }
+  
