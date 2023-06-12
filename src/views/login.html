@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +7,24 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/login_style.css">
     <title>Login</title>
-
+    <script src="./js/login_script.js"></script>
+</head>
+<body>
     <div class="main-login">
-        <div class="left-login">
+        <div  class="left-login">
             <h1>Faça seu login<br>ou registre-se na plataforma</h1>
             <img src="../assets/img/image.png" class="left-login-image" alt="buscatel animação">
         </div>
         <div class="right-login">
-            <div class="card-login">
+            <form id="loginForm" class="card-login">
                 <h1>Que bom revê-lo novamente. <br> Realize o login e tenha acesso a sua conta</h1>
                 <div class="text__form">
                     <img src="../assets/img/User_alt_fill.svg"/>
-                    <input type="text" class="user" placeholder="Usuário" style="border: none;"/>
+                    <input id="usernameInput" type="text" class="user" placeholder="Usuário" style="border: none;" required>
                 </div>
                 <div class="text__form">
                     <img src="../assets/img/keyvsg.svg" alt="">
-                    <input type="password" class="user" name="senha" placeholder="Senha">
+                    <input id="passwordInput" type="password" class="password" name="senha" placeholder="Senha" required>
                 </div>
                 <div>
                     <a href="forgetPassword.html" class="forget">Esqueci minha senha</a>
@@ -35,7 +37,7 @@
                         <span></span>
                     </a>
                 </div>
-                <button class="btn-login" onclick="redirecionarParaRegistroAlojamento()">Login</button>
+                <button class="btn-login">Login</button>
                 <div>
                     <a href="register.html" class="forget">Ainda não possui conta? Cadastre-se no site</a>
                 </div>
@@ -47,10 +49,8 @@
                         <span></span>
                     </a>
                 </div>
-            </div>
+            </form>
         </div>
-
-    </div>
-    <script></script>
+    </div> 
 </body>
 </html>
