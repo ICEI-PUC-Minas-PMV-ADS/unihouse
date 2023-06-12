@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         alert("Login bem-sucedido!");
   
        
-        window.location.href = "./exibicao/exibicao.html";
+        window.location.href = "./registerAccommodation.html";
       } else {
         alert("Usuário ou senha inválidos. Por favor, tente novamente.");
       }

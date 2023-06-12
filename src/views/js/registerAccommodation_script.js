@@ -102,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("registeredHouses", JSON.stringify(houses));
 
         alert("Casa registrada corretamente.");
+        alert(JSON.stringify(house));
         
         return false;
     });
