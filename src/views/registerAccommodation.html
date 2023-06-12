@@ -1,62 +1,149 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Casa</title>
-    <meta name="author" content="Luan">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <!--Icones-->
-    <script src="https://kit.fontawesome.com/ab52fd1164.js" crossorigin="anonymous"></script>
     <!--CSS gerais-->
-    <link rel="stylesheet" href="./src/views/css/reset.css">
-    <link rel="stylesheet" href="/src/views/css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+        <!--Css específico-->
     <link rel="stylesheet" href="./css/registerAccommodation_style.css">
+        <!--Bibliotecas-->
+        <script src="https://kit.fontawesome.com/ab52fd1164.js" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Unihouse</title>
 </head>
 <body>
-    <div class="content">
-        <h1>Cadastrar Casa</h1>
-        <form id="form">
-            <div>
-                <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
-                <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
-            </div>
-            <div>
-                <input type="email" placeholder="Digite seu email" class="inputs required" oninput="emailValidate()">
-                <span class="span-required">Digite um email válido</span>
-            </div>
-            <div>
-                <input type="number" placeholder="Idade" class="inputs required" oninput="Number()">
-                <span class="span-required">Deve ser maior que 18 anos</span>
-            </div>
-            <div>
-                <input type="Text" placeholder="CEP" class="inputs required" oninput="Number()">
-                <span class="span-required">Insira o CEP</span>
-            </div>
-            <textarea class="inputs" name="descricao" id="descricao" cols="25" rows="10" placeholder="Fale um pouco sobre a casa e o valor do aluguel..."></textarea>
-            <p>Valor Médio:</p>
-            <div class="box-select">
-                <div>
-                    <input type="radio" id="m" value="m" name="valor">
-                    <label for="m">200-500</label>
+    <nav class="nav">
+        <a href="../../index.html" class="nav__logo">
+            <img class="nav__logo" src="../assets/img/logo.png" alt="logo">
+        </a>
+
+        <a href="./login.html" class="nav__btn">
+            <i class="fa-solid fa-user"></i>
+        </a>
+    </nav>
+
+    <main class="formularios">
+        <form class="informacoes--primarias" id="informacoes--primarias">
+        <h1 class="titulo">Informacoes de Alojamento</h1>
+
+            <div action="/" class="flex" class="primeiro--input">
+            <!-- OLOCO -->
+                <div >
+                    <label for="">Nome do Alojamento</label>
+                    <input id="iptNameALJ" type="text" name="name" style="width: 580px;" required>
                 </div>
                 <div>
-                    <input type="radio" id="f" value="f" name="valor">
-                    <label for="f">500-1000</label>
+                    <label for="">Rua do Alojamento</label>
+                    <input id="iptRuaALJ" type="text" name="name" style="width: 570px;" required>
                 </div>
                 <div>
-                    <input type="radio" id="o" value="o" name="valor">
-                    <label for="o">Acima</label>
+                    <label for="">CEP</label>
+                    <input id="iptCep" type="text" name="name" required>
+                </div>
+                <div>
+                    <label for="">Bairro</label>
+                    <input id="iptBairro" type="text" name="name" required>
+                </div>
+                <div>
+                    <label for="">Cidade</label>
+                    <input id="iptCidade" type="text" name="name" required>
+                </div>
+                <div>
+                    <label for="">Estado</label>
+                    <input id="iptEstado" type="text" name="name" required>
+                </div>
+                <div>
+                    <label for="">Complemento</label>
+                    <input id="iptComplemento" type="text" name="name">
+                </div>
+                
+            </div> 
+            
+            <!-- FORMULARIO DE CASA, BANHEIROS E VAGAS-->
+            <div  class="formulario--casas">
+
+                <div class="iptEscCasa">
+                    <input type="radio" value="casa" name="residencia">
+                    <label for="">CASA</label>
+                    <input type="radio" value="casa" name="residencia">
+                    <label for="">Apartamento</label>
+                </div>
+                
+                <div class="pequena--div">
+                    <input type="number">
+                    <label for="">Numero de Apartamentos</label>
+                    <input type="number">
+                    <label for="">Numero de Quartos</label>
+                    <input type="number">
+                    <label for="">Numero de vagas p/ carros</label>
+                    <input type="number">
+                    <label for="">Numero de banheiros</label>
                 </div>
             </div>
-            <p>Insira Imagens abaixo:</p>
-            <input type="file" id="myFile" />
-            <button type="submit">Cadastrar</button>
+            
+            <h1 class="titulo">Detalhes sobre o alojamento</h1>
+            
+            <div class="detalhes">
+                <div class="pequena--div">
+                    <input type="number">
+                    <label for="">Wifi em casa</label>
+                    <input type="number">
+                    <label for="">Academia</label>
+                    <input type="number">
+                    <label for="">Piscina</label>
+                    <input type="number">
+                    <label for="">Quadra poli-esportiva</label>
+                    <input type="number">
+                    <label for="">Ar condicionado</label>
+                </div>
+                
+                <div class="input-texto-image">
+                    <input type="text" name="" id="">
+                    
+                    <input type="file">
+                </div>
+                
+            </div>
+            
+            <h1 class="titulo">Detalhes sobre o locador</h1>
+            <div class="informacoes--primarias">
+                <div class="flex" class="primeiro--input">
+                    <div >
+                        <label for="">Nome do completo do Locador</label>
+                        <input id="iptNameloc" type="text" name="name" style="width: 560px;" required>
+                    </div>
+                    <div>
+                        <label for="">CPF</label>
+                        <input id="iptCpf" type="text" name="name" required>
+                    </div>
+                    <div>
+                        <label for="">E-mail</label>
+                        <input id="iptEmail" type="email" name="name" style="width: 520px;" required>
+                    </div>
+                                                     <div>
+                        <label for="">Numero de telefone</label>
+                        <input id="iptNumTel" type="tel" name="name" style="width: 276px;" required>
+                    </div>
+                    <div>
+                        <label for="">Link do perfil do Instagram</label>
+                        <input id="iptInstaPerfil" type="text" name="name" style="width: 444px;">
+                    </div>
+                    <div>
+                        <label for="">Link do perfil do Facebook</label>
+                        <input id="iptFacePerfil" type="text" name="name" style="width: 438px;">
+                    </div>
+                    
+                </div> 
+
+                <button class="botaoCadastrar">Cadastrar</button>
+            </div>
+            
         </form>
-    </div>
-    <!--Script geral-->
-    <script src="./src/views/js/script.js"></script>
-    <script src="./js/registerAccommodation_script.js"></script>
+        </main>
 </body>
+<script src="./js/registerAccommodation_script.js"></script>
+<script src="js/script.js"></script>
 </html>

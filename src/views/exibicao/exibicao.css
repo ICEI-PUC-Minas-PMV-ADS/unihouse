@@ -1,0 +1,51 @@
+.fa-user {
+    color: white;
+}
+
+.main-exibicao {
+ display: flex;
+ flex-direction: column;
+}
+.containerExibicao {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    width: 70%;
+    padding: 50px;
+    gap: 10px;
+    background-color: #616161;
+    border-radius: 3px;
+}
+
+button{
+    background-color: var(--colorSeg);
+    color: #fff;
+    width: 60%;
+    height: 80px;
+}
+
+.containerimage img {
+    height: 250px;
+    width: 250px;
+    border-radius: 8px;
+    margin-bottom: 80px;
+}
+
+.containertext {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.containerButton{
+    text-align: center;
+  }
+
+.containerButton button{
+    height: 40px;
+    width: 50%;
+    border-radius: 12px;
+    color: rgb(210, 233, 248);
+    gap: 10px;
+}
+
+

@@ -10,39 +10,40 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/register_style.css">
     <script src="https://kit.fontawesome.com/ab52fd1164.js" crossorigin="anonymous"></script>
+    
+    <script src="./js/register_script.js"></script>
 </head>
 <body>
-    <!--HTML DO FORMULÁRIO AQUI-->
     <main>
-        <form>
+        <form id="registrationForm">
             <div class="ContainerVoltar">
-            <a href="login.html"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
+                <a href="login.html"><i class="fa-solid fa-arrow-left"></i> Voltar</a>
             </div>
-           
-             <div class="ContainerCadastro">
+        
+            <div class="ContainerCadastro">
                 <h2>Crie sua conta</h2>  
-
+        
                 <div class="ContainerInput">
-                <i class="fa-solid fa-envelope"></i><input type="text" placeholder="Seu email">
+                    <i class="fa-solid fa-envelope"></i><input id="emailInput" type="email" placeholder="Seu email" required>
                 </div>
-
+        
                 <div class="ContainerInput">
-                <i class="fa-solid fa-user"></i><input type="text" placeholder="Seu usuário">
+                    <i class="fa-solid fa-user"></i><input id="usernameInput" type="text" placeholder="Seu usuário" required>
                 </div>
-
+        
                 <div class="ContainerInput">
-                <i class="fa-solid fa-lock"></i><input type="password" placeholder="Sua senha">
+                    <i class="fa-solid fa-lock"></i><input id="passwordInput" type="password" placeholder="Sua senha" required>
                 </div>
-
+        
                 <div class="ContainerInput">
-                <i class="fa-solid fa-lock"></i><input type="password" placeholder="Confirme sua senha">
+                    <i class="fa-solid fa-lock"></i><input id="confirmPasswordInput" type="password" placeholder="Confirme sua senha" required>
                 </div>
-            
-                <P>Ao se registrar, você aceita nossos <a href="#">termos de uso</a>  </P>
-                <button onclick="redirecionarParaLogin()">Cadastrar</button>
-             </div>
-
+        
+                <p>Ao se registrar, você aceita nossos <a href="#">termos de uso</a></p>
+                <button>Cadastrar</button>
+            </div>
         </form>
+        
         <div class="ContainerImagem">
             <img src="../assets/img/logo.png" alt="Logo">
             <h1>Mais de 20 mil <br> alojamentos <br> registrados</h1>
@@ -50,9 +51,5 @@
         </main>
     
     <script src="js/script.js"></script>
-    <script src="js/register_script.js"></script>
-    <script>function redirecionarParaLogin() {
-        window.location.href = "login.html"
-    }</script>
 </body>
 </html>
