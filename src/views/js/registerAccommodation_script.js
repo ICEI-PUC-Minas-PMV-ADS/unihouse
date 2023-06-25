@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         localStorage.setItem("registeredHouses", JSON.stringify(houses));
 
         alert("Casa registrada corretamente.");        
-        window.location.href = "../index.html";
+        window.location.href = "../../index.html";
         
         return false;
     });
