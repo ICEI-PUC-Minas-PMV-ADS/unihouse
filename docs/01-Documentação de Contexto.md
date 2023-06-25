@@ -1,46 +1,30 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O Sistema de Seleção Unificada (Sisu) oferece a oportunidade aos alunos que realizaram o Enem de se inscrever em instituições públicas de ensino superior em todo Brasil para concorrer a vagas. <br> <br>
+	A partir das matriculas realizadas no Sisu, estudos estatísticos do MEC (Ministério da Educação) mostram um aumento significativo em relação à porcentagem de alunos que optaram por estudar em outro estado. De acordo com o Ministério da Educação, o percentual deu um salto de 1% para 25% (Ministério da Educação, 2010). A aprovação em uma Universidade pública em uma cidade ou estado diferente traz consigo muitas realizações, contudo, são desafios que podem trazer certo desconforto antes do inicio da nova jornada estudantil. <br> <br>
+	Em vista disso, é notável de maneira quase tangível o desafio enfrentado pelos jovens recém-ingressados na universidade em busca de moradia, podendo citar os seguintes problemas: dispersão geográfica, incompatibilidade de companheiros de moradia e custos elevados. De acordo com LI (2016), uma das principais consequências esperadas da implementação da plataforma Sisu, estão relacionadas à mudança no comportamento de migração. <br> <br>
+	Não obstante, têm-se notado a crescente de repúblicas e comunidades que abriguem tais estudantes. Ao mesmo tempo, há hotéis e residências que, por desconhecimento de plataformas, acabam sendo ofuscados de possíveis clientes ou residentes. Entretanto, também há as especificações do residente: "A pessoa com quem vou conviver se encaixará comigo?", "Será que essa pessoa irá suportar minha personalidade tímida/contagiante?"<br> <br>
+	Dado a dificuldade de encontrar moradia próxima à faculdade e residências ofuscadas ou receosas a respeito de especificações, deram-se origem a criação e elaboração desse projeto. Onde se procura conectar usuário locador ao usuário locatário a partir de perfis de interesses semelhantes, e sendo exclusiva para universitários em busca de uma moradia próxima a faculdade. Vale ressaltar que é de extrema importância a produção de uma aplicação que categorize, registre e mostre os alojamentos disponíveis, sendo casas ou apartamentos e as personalidades dos hóspedes e hospedeiros.<br> <br>
+
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Conforme o que já foi exposto, o projeto visará solucionar os problemas citados anteriormente, sendo eles, se as pessoas que já habitam o lugar são o tipo de companheiros ideais para você, além de facilitar o processo de você ter que ir até a cidade, gastando dinheiro com a locomoção e o tempo de ir e voltar para a sua cidade atual, logo, irá economizar tempo e dinheiro, e como isso pode ser realizado, será através de um sistema capaz de registrar alojamentos (casas ou apartamentos), mostrar opções dos mesmos, destacando a distância até a universidade, contato do responsável pelo lugar, valor a ser pago mensalmente e informações relevantes do alojamento  <br> <br>
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+O Objetivo do Buscatel.com é a criação de um site para usuários buscarem locais parar morar próximo a universidade, faculdade e locais de ensino, onde querem estudar. 
++	Ajudar o universitário a encontrar um alojamento próximo à sua universidade, disponibilizando valores e informações sobre o locador e informações do alojamento
++	Permitir a publicação de novos locais de moradia personalizadas por usuários que serão os proprietários dos alojamentos.
++	Ajudar os locadores a anunciarem o seu alojamento, para publicar e anunciar a sua residência
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+De acordo com um estudo realizado pela empresa de hospedagem Hoteis.com, cerca de 30% dos estudantes universitários dos Estados Unidos pesquisam hotéis próximos às universidades para se hospedar durante o ano letivo. A pesquisa também mostrou que mais de um terço desses estudantes estaria disposto a pagar até US$ 150 por noite em um hotel próximo à universidade. <br> <br>
+Além disso, a pesquisa também mostrou que muitos estudantes estão dispostos a dividir o quarto com outros estudantes para reduzir o custo da hospedagem. Cerca de 40% dos estudantes entrevistados afirmaram que dividiriam um quarto com um colega para economizar dinheiro.<br> <br>
+Diante deste problema, é que se encontra a solução que o unihouse.com se dispõe a ser, um sistema que tem como objetivo solucionar e facilitar a busca por um alojamento próximo à universidade do aluno, visando o fácil encontro de lugares para habitar. <br> <br>
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
-
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
 
 ## Público-Alvo
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
-
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
-
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Embora todos os usuários se beneficiem do site o foco desse projeto está em estudantes universitários. Com isso, o público-alvo do unihouse.com são pessoas que estão estudando ou ingressando em uma universidade e que buscam uma plataforma online que possa ajudá-los a encontrar as melhores ofertas de hospedagem perto de sua universidade em diferentes locais.
