@@ -23,6 +23,7 @@ h1,h2,h3,p {
 }
 
 .nav {
+    z-index: 9000;
     display: flex;
     justify-content: space-between;
     align-items: center;
