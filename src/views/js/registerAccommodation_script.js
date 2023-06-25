@@ -5,7 +5,7 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-    $('#iptNumTel').mask('(00) 0000-0000');     
+    $('#iptNumTel').mask('(00) 00000-0000');     
 });
 
 $(document).ready(function() {
