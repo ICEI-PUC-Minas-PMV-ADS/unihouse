@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="./css/style.css">
         <!--Css específico-->
     <link rel="stylesheet" href="./css/registerAccommodation_style.css">
-        <!--Bibliotecas-->
-        <script src="https://kit.fontawesome.com/ab52fd1164.js" crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/scrollreveal"></script>
+    <!--Bibliotecas-->
+    <script src="https://kit.fontawesome.com/ab52fd1164.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+    
     <title>Unihouse</title>
 </head>
 <body>
@@ -20,9 +23,14 @@
             <img class="nav__logo" src="../assets/img/logo.png" alt="logo">
         </a>
 
-        <a href="./login.html" class="nav__btn">
-            <i class="fa-solid fa-user"></i>
-        </a>
+        <div id="addAlojamento" class="addAlojamento">
+            <a href="#" class="add__alj__btn">
+                <p>Adicionar alojamento</p>
+            </a>
+            <a href="" class="nav__btn">
+                <i class="fa-solid fa-user"></i>
+            </a>
+        </div>
     </nav>
 
     <main class="formularios">
@@ -67,7 +75,7 @@
 
                 <div class="iptEscCasa">
                     <input type="radio" value="casa" name="residencia">
-                    <label for="">CASA</label>
+                    <label for="">Casa</label>
                     <input type="radio" value="casa" name="residencia">
                     <label for="">Apartamento</label>
                 </div>
@@ -123,7 +131,7 @@
                         <label for="">E-mail</label>
                         <input id="iptEmail" type="email" name="name" style="width: 520px;" required>
                     </div>
-                                                     <div>
+                    <div>
                         <label for="">Numero de telefone</label>
                         <input id="iptNumTel" type="tel" name="name" style="width: 276px;" required>
                     </div>

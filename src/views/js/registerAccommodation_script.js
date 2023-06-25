@@ -1,45 +1,16 @@
 const form   = document.getElementById('informacoes--primarias');
-    const campos = document.querySelectorAll('.required');
-    const spans  = document.querySelectorAll('.span-required');
-    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
-    form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        nameValidate();
-        emailValidate();
-    });
+$(document).ready(function() {
+    $('#iptCpf').mask('000.000.000-00');
+});
 
-    function setError(index){
-        campos[index].style.border = '2px solid #e63636';
-        spans[index].style.display = 'block';
-    }
+$(document).ready(function() {
+    $('#iptNumTel').mask('(00) 0000-0000');     
+});
 
-    function removeError(index){
-        campos[index].style.border = '';
-        spans[index].style.display = 'none';
-    }
-
-    function nameValidate(){
-        if(campos[0].value.length < 3)
-        {
-            setError(0);
-        }
-        else
-        {
-            removeError(0);
-        }
-    }
-
-    function emailValidate(){
-        if(!emailRegex.test(campos[1].value))
-        {
-            setError(1);
-        }
-        else
-        {
-            removeError(1);
-        }
-    }
+$(document).ready(function() {
+    $('#iptCep').mask('00000-000');
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     document.getElementById("informacoes--primarias").addEventListener("submit", function(event) {
@@ -52,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var estadoALJ = document.getElementById("iptEstado").value;
         var complementoALJ = document.getElementById("iptComplemento").value;
         var cepALJ = document.getElementById("iptCep").value;
-        var escALJ = document.getElementsByName("iptEscCasa");
+        var escALJ = document.querySelector('input[name="residencia"]:checked').value;
         var nomeLOC = document.getElementById("iptNameloc").value;
         var cpfLOC = document.getElementById("iptCpf").value;
         var emailLOC = document.getElementById("iptEmail").value;
@@ -60,16 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
         var instaLOC = document.getElementById("iptInstaPerfil").value;
         var faceLOC = document.getElementById("iptFacePerfil").value;
         
-        var decisaoALJ;
-
-        function escolhaTipoALJ(){
-            for (var i = 0; i < escALJ.length; i++) {
-                if (escALJ[i].checked) {
-                    decisaoALJ = escALJ[i].value;
-                break;
-                }
-            } 
-        }
 
         if (!nomeALJ || !ruaALJ || !cidadeALJ || !bairoALJ || !estadoALJ || !complementoALJ || !cepALJ || !escALJ || !nomeLOC
             || !cpfLOC || !emailLOC || !numTelLOC || !instaLOC || !faceLOC) {
@@ -85,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
             estadoAlojamento: estadoALJ,
             complementoAlojamento: complementoALJ,
             cepAlojamento: cepALJ,
-            decisaoAlojamento: decisaoALJ,
+            TipoAlojamento: escALJ,
             nomeLocador: nomeLOC,
             cpfLocador: cpfLOC,
             emailLocador: emailLOC,
@@ -101,8 +62,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         localStorage.setItem("registeredHouses", JSON.stringify(houses));
 
-        alert("Casa registrada corretamente.");
-        alert(JSON.stringify(house));
+        alert("Casa registrada corretamente.");        
+        window.location.href = "../index.html";
         
         return false;
     });

@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function() {
   
       alert("Usuário cadastrado com sucesso!");
   
+      localStorage['statusLogin'] = 'true'; 
+      
       window.location.href = "login.html";
   
       return false;

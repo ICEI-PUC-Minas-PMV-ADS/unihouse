@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   
       var username = document.getElementById("usernameInput").value;
       var password = document.getElementById("passwordInput").value;
-  
+
       if (!username || !password) {
         alert("Por favor, preencha todos os campos.");
         return false;
@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function() {
   
       if (authenticatedUser) {
         alert("Login bem-sucedido!");
-  
+        localStorage['statusLogin'] = 'true'; 
        
-        window.location.href = "./registerAccommodation.html";
+        window.location.href = "../../index.html";
       } else {
         alert("Usuário ou senha inválidos. Por favor, tente novamente.");
       }

@@ -15,6 +15,7 @@ section {
     min-height: 50vh;
 }
 
+
 .main__title {
     color: var(--colorText);
     text-transform: uppercase;
