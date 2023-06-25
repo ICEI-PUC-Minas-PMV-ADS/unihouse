@@ -1,10 +1,6 @@
 # Especificações do Projeto
 
-<span style="color:red">Pré-requisitos: <a href="1-Documentação de Contexto.md"> Documentação de Contexto</a></span>
-
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
-
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+A definição exata do problema e os pontos mais relevantes a serem tratados neste projeto foram consolidados com a participação dos usuários em um trabalho de imersão feita pelos membros da equipe a partir da observação dos usuários em seu local natural e por meio de entrevistas. Os detalhes levantados nesse processo foram consolidados na forma de personas e histórias de usuários.
 
 ## Personas
 
@@ -42,50 +38,59 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+O escopo funcional do projeto é definido por meio dos requisitos funcionais que descrevem as possibilidades interação dos usuários, bem como os requisitos não funcionais que descrevem os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir.
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|ID     | Descrição do Requisito  | Prioridade |
+|-------|-----------------------------------------|----|
+|RF-01 | Na tela principal deverá apresentar os Estados que possuem as universidades com maior pontuação no MEC | Media | 
+|RF-02 | Na tela principal deverá conter uma barra de pesquisa de localização das universidades   | Alta |
+|RF-03 | Na tela principal deverá conter um acesso para a tela de login   | Baixa |
+|RF-04 | Na tela principal deverá conter informações sobre a empresa e por quê escolhê-la.   | Baixa |
+|RF-05 | Na tela de login deverá conter dois campos de usuários senha para o acesso ao site   | Alta |
+|RF-06 | O sistema deverá verificar se existe usuário   | Alta |
+|RF-07 | Na tela de login deverá conter o “esqueci minha senha” no qual redirecionará para uma nova página   | Media |
+|RF-08 | A tela de “recuperar senha” deverá conter dois campos de usuário e e-mail   | Media |
+|RF-09 | O sistema deverá enviar uma mensagem de recuperação de senha para o e-mail cadastrado na conta   | Baixa |
+|RF-10 | Na tela de login deverá conter acesso para a tela de cadastro caso usuário não possua conta   | Alta |
+|RF-11 | Na tela de cadastro deverá ter um formulário contendo os campos de e-mail, usuário, senha e confirmar sua senha   | Alta |
+|RF-12 | Na tela de cadastro deverá ter uma mensagem informando ao usuário que ao se cadastrar estará concordando com os termos de uso   | Baixa |
+|RF-13 | Aplicação deve conter capacidade de navegar entre as páginas   | Alta |
+|RF-14 | O site deve permitir informar preço e informações sobre acomodação   | Media |
+|RF-15 | Na tela de cadastro do alojamento deverá conter diversos campos contendo informações específicas do usuário e do alojamento | Alta |
+|RF-16 | O site deve apresentar, para cada alojamento, uma imagem correspondente ao quarto disponível, sala de estar, cozinha e banheiro (thumbnail)   | Baixa |
+|RF-17 | O site oferece fotos de acomodação das hospedagens   | Baixa |
+|RF-18 | A tela de cadastro deverá mostrar uma mensagem ao realizar o cadastro informando que não será possível realizar o cadastro caso não tenha preenchido os campos corretamente.   | Alta |
+|RF-19 | A tela de cadastro deverá mostrar uma mensagem informando que a senha é fraca caso tenha menos de 6 dígitos.   | Alta |
+|RF-20 | O usuário deverá informar um email válido para recuperar a senha.   | Alta |
 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+|RNF-001| Sistema capaz de lidar com inúmeros usuários sem qualquer degradação no desempenho.  | ALTA | 
+|RNF-002| Sistema possui toda segurança, impossibilitando acessos restritos de hackers. |  MEDIA | 
+|RNF-003| Sistema com toda escalabilidade sendo capaz de aumentar ou diminuir conforme o necessário. |  ALTA | 
+|RNF-004| Sistema contém modificações das informações diariamente. |  ALTA | 
+|RNF-005| Sistema possui disponibilidade 24 horas. |  ALTA | 
+|RNF-006| Sistema cumprindo todas as leis e regulamentos aplicáveis. |  BAIXA | 
+|RNF-007| Sistema com usabilidade, tendo uma grande facilidade pro usuário. |  ALTA | 
+|RNF-008| Sistema que permite cadastro/login e senha. |  BAIXA | 
+|RNF-009| Sistema compatível com os principais navegadores do mercado (Google Chrome, Microsoft Edge, Firefox, Safari). |  ALTA | 
+|RNF-010| Sistema com toda confiabilidade, atendendo todos os requisitos do usuário. |  ALTA | 
+|RNF-011| Sistema que possui telas responsivas, dando possibilidade de acesso por todo e qualquer dispositivos.|  MEDIA | 
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
-O projeto está restrito pelos itens apresentados na tabela a seguir.
+As questões que limitam a execução desse projeto e que se configuram como obrigações claras para o desenvolvimento do projeto em questão são apresentadas na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01| A aplicação tem como prazo para a finalização do desenvolvimento até 25/06/2023. |
+|02| O projeto deve se restringir as tecnologias básicas de web front-end.        |
+|03| A equipe não poderá subcontratar o desenvolvimento do projeto.        |
+|04| Para realização do projeto a equipe deve definir e seguir em conjunto padrões de projeto.       |
 
-
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
-
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
